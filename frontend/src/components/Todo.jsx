@@ -30,6 +30,7 @@ function Todo() {
 
   useEffect(() => {
     getFunc()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     
   }, [upt,deleted]);
 
