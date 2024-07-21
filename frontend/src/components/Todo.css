@@ -1,0 +1,207 @@
+.main_body{
+    border: 15px dashed crimson;
+    padding-bottom: 10px;
+    margin:1%;
+    background-color:black;
+    border-radius: 20px;
+}
+.main_head {
+    height: 35px;
+  
+    display: flex;
+  
+    column-gap: 5px;
+    margin-top: 2%;
+  }
+
+.table {
+  margin: auto;
+  width: 70%;
+}
+.tableDiv{
+    height: 400px;
+    overflow-y: scroll;
+  }
+.tableDiv::-webkit-scrollbar{
+    display: none;
+}
+.edit_item {
+  background-color: royalblue;
+  height: 35px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 0px 5px 0px 5px;
+  width: 50px;
+}
+
+.tog_item {
+  height: 35px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  width: 50px;
+}
+.delitem {
+    background-color: red;
+    height: 35px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 50px;
+  }
+.Edit_head {
+  height: 35px;
+  display: flex;
+  column-gap: 5px;
+  margin: auto;
+  margin-top: 50px;
+}
+.heading {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 15px;
+}
+.input_date {
+  padding-left: 10px;
+  height: 40px;
+  color: white;
+  background-color: orchid;
+  border: none;
+  border-radius: 5px;
+  width: 20%;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.input_item {
+  background-color: lightskyblue;
+  padding-left: 10px;
+  height: 40px;
+  color: black;
+  border-radius: 5px;
+  width: 40%;
+  font-weight: 700;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.buttonclick {
+  background-color: mediumvioletred;
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  width: 20%;
+}
+.clear_btn {
+  background-color: dodgerblue;
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  width: 20%;
+}
+.update_btn {
+  background-color: blueviolet;
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  /* width: 20%; */
+  /* margin-top: 5px; */
+}
+.main_heading {
+  color: wheat;
+  text-align: center;
+}
+
+.titles {
+  width: 70%;
+  background-color: lavender;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 700;
+  text-align: center;
+}
+.dates {
+  background-color: darkorange;
+  width: 160px;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 700;
+  text-align: center;
+}
+.input_date,
+.input_item {
+  width: 90%;
+}
+@media (min-width: 550px) and (max-width: 900px) {
+  .clear_btn,
+  .buttonclick {
+    width: 45%;
+  }
+  .input_date,
+  .input_item {
+    width: 90%;
+  }
+  .buttonclick {
+    margin-left: 55%;
+  }
+  .main_head {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    height: 1%;
+  }
+}
+@media (max-width: 550px) {
+  .main_head {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    height: 1%;
+  }
+  .clear_btn,
+  .buttonclick {
+    width: 40%;
+    margin-left: 30%;
+    margin-bottom: 1%;
+  }
+  .input_date,
+  .input_item {
+    width: 100%;
+  }
+  tr {
+    display: grid;
+    grid-template-rows: auto;
+    margin-bottom: 3%;
+  }
+  .dates {
+    width: 100%;
+    margin-bottom: 3px;
+  }
+  .titles {
+    width: 100%;
+    margin-bottom: 3px;
+  }
+  .tog_item {
+    width: 30%;
+    margin-left: 35%;
+  }
+  .delitem {
+    width: 30%;
+    margin-left: 35%;
+  }
+  .edit_item {
+    width: 30%;
+    margin-left: 35%;
+  }
+  .update_btn {
+    width: 50%;
+    margin-left: 25%;
+  }
+  .Edit_head {
+    display: grid;
+    grid-template-rows: auto;
+  }
+}
