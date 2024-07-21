@@ -109,7 +109,7 @@ function Todo() {
                 };
 
                 axios
-                  .post("http://localhost:5432/todo/", content)
+                  .post("https://todo-api-git.onrender.com/todo", content)
                   .then((dataz) => {
                     dispatch(addTodo(dataz));
                     getFunc();
