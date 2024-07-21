@@ -58,7 +58,7 @@ function Todo() {
   // Get Function for get data from database
   const getFunc = () => {
     axios
-      .get("http://localhost:5432/todo/")
+      .get("https://todo-api-git.onrender.com/todo")
       .then(({ data }) => {
         dispatch(getTodo(data));
       })
@@ -70,7 +70,7 @@ function Todo() {
   // editHandler for update title of todoitem using api sending data to database
   function editHandle(todoid) {
     axios
-      .patch(`https://todo-api-git.herokuapp.com/todo/${todoid}`, {
+      .patch(`https://todo-api-git.onrender.com/todo${todoid}`, {
         title: txt,
         date: dt,
       })
@@ -124,7 +124,7 @@ function Todo() {
             className={"clear_btn"}
             onClick={() => {
               axios
-                .delete(`https://todo-api-git.herokuapp.com/todo/`)
+                .delete(`https://todo-api-git.onrender.com/todo`)
                 .then((del) => setDeleted(del));
             }}
           >
@@ -149,7 +149,7 @@ function Todo() {
                       e.status
                         ? axios
                             .patch(
-                              `https://todo-api-git.herokuapp.com/todo/${e._id}`,
+                              `https://todo-api-git.onrender.com/todo${e._id}`,
                               { status: false }
                             )
                             .then((res) => {
@@ -160,7 +160,7 @@ function Todo() {
                             })
                         : axios
                             .patch(
-                              `https://todo-api-git.herokuapp.com/todo/${e._id}`,
+                              `https://todo-api-git.onrender.com/todo${e._id}`,
                               { status: true }
                             )
                             .then((res) => {
@@ -196,7 +196,7 @@ function Todo() {
                     onClick={() => {
                       axios
                         .delete(
-                          `https://todo-api-git.herokuapp.com/todo/${e._id}`
+                          `https://todo-api-git.onrender.com/todo${e._id}`
                         )
                         .then((del) => setDeleted(del));
                     }}
