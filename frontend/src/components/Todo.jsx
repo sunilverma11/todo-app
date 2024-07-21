@@ -30,8 +30,7 @@ function Todo() {
 
   useEffect(() => {
     getFunc()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    
+    //eslint-disable-next-line
   }, [upt,deleted]);
 
   const [modal, setModal] = useState(false);
