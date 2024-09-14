@@ -2,7 +2,7 @@
 // express is big function , function of objects
 const express = require("express");
 const todoController = require("./controllers/todo.controller")
-
+const userController = require("./controllers/user.controller")
 const app = express()
 const cors = require('cors');
 const corsOptions ={
@@ -18,10 +18,6 @@ app.use(cors(corsOptions));
 
 app.use(express.json())
 
-app.use("", todoController);
-
-
-
-
+app.use("", todoController,userController);
 
 module.exports=app
